@@ -1,6 +1,11 @@
 * {
   font-family: "Poppins", sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 /* estilos generales */
 
 html {
@@ -24,6 +29,10 @@ a {
   width: 8rem;
 }
 
+html,body {
+height: 100%;
+}
+
 /* inicio header */
 .productosTitulo {
   text-align: center;
@@ -41,17 +50,16 @@ header{
 
 
 /* inicio main */
-.remerica {
-  width: 15rem;
-}
-
-.remerica2 {
-  width: 15rem;
-}
-
-
 .ultimoDrop {
 width: 100%;
+}
+
+.remerica {
+  width: 100%;
+}
+
+.contenedorProducto {
+  width: 24rem;
 }
 
 .productosFlexContainer {
@@ -74,3 +82,10 @@ width: 100%;
   padding: 0.5rem 1rem;
 }
 
+/*  estilos footer */
+.footerDiseño {
+  background-color: rgb(0, 0, 0);
+  color: rgb(247, 246, 244);
+  padding: 1rem;
+
+}
