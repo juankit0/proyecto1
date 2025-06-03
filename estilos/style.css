@@ -1,0 +1,76 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+/* estilos generales */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(231, 230, 222);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.logotipoHeader {
+  width: 8rem;
+}
+
+/* inicio header */
+.productosTitulo {
+  text-align: center;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navPrincipal{
+  display: flex;
+  gap: 1.2rem;
+}
+
+
+/* inicio main */
+.remerica {
+  width: 15rem;
+}
+
+.remerica2 {
+  width: 15rem;
+}
+
+
+.ultimoDrop {
+width: 100%;
+}
+
+.productosFlexContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 5rem; 
+}
+
+.btncomprar {
+  border: none;
+  background-color: rgb(106, 151, 250);
+  padding: 0.5rem 1rem;
+}
+
+
+.carrito {
+  border: none;
+  background-color: rgb(106, 151, 250);
+  padding: 0.5rem 1rem;
+}
+
