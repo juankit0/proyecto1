@@ -1,3 +1,5 @@
+/* estilos generales */
+
 * {
   font-family: "Poppins", sans-serif;
 
@@ -6,7 +8,6 @@
   box-sizing: border-box;
 }
 
-/* estilos generales */
 
 html {
   scroll-behavior: smooth;
@@ -34,6 +35,7 @@ height: 100%;
 }
 
 /* inicio header */
+
 .productosTitulo {
   text-align: center;
 }
@@ -50,8 +52,15 @@ header{
 
 
 /* inicio main */
-.ultimoDrop {
-width: 100%;
+.banners img {
+  height: 80vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.productosTitulo {
+  margin: 3rem 0;
 }
 
 .remerica {
@@ -87,5 +96,209 @@ width: 100%;
   background-color: rgb(0, 0, 0);
   color: rgb(247, 246, 244);
   padding: 1rem;
+
+}
+
+/* estilos contacto */
+
+.containerContacto{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 6rem;
+    padding: 8rem 0;
+    width: 85vw;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.mainContacto h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* formulario */
+
+.mainContacto form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.input label{
+    text-align: start;
+    font-size: 0.8rem;
+}
+
+.input input, .input textarea{
+    height: 2.5rem;
+    border-radius: 10px;
+    border: solid rgb(146, 146, 146) 1px;
+    background-color: rgb(3, 3, 3);
+    padding: 5px 10px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    
+}
+.input textarea{
+    height: 6rem;
+}
+
+/* boton */
+
+.button input{
+    width: 100%;
+    color: rgb(17, 17, 17);
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    border: solid rgb(255, 255, 255) 4px;
+    margin-top: 20px;
+    padding: 10px 0;
+
+  }
+ 
+  /* preguntas estilos */
+.preguntasTitulo {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+  color: #333;
+}
+
+.respuestasTitulo {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5em;
+}
+
+/* sucursales estilos */
+.sucursales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.sucursal {
+  background-color: #fff;
+  border-left: 5px solid #007bff;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+
+}
+ 
+.sucursales img {
+  width: 15rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+@media (min-width:1024px) {
+  .sucursales img {
+    width: 25rem;
+  }
+}
+
+
+
+@media (min-width:360px){
+
+.containerCards{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    padding: 4rem 1.4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.containerCards h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.containerCards .cards{
+    background-color: rgb(36, 48, 158);
+    height: 100%;
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+    padding: 1.15rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: solid #818181 1px;
+    color: #fff;
+    transition: transform 0.5s ease;
+
+}
+.containerCards .cards:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 6px 2px rgb(199, 199, 199);
+}
+.containerCards .cards img{
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+/* button */
+
+.containerButton{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    padding: 0.7rem 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.containerButton .button{
+    background-color: rgb(255, 255, 255);
+    padding: 9px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 25px;
+    border: solid #fff 1px;
+    transition: transform 0.5s ease;
+}
+.containerButton .button:hover{
+    transform: scale(1.04);
+}
+.containerCards .precio{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.containerCards .precio span{
+    color: rgb(141, 141, 141);
+    text-decoration: line-through;
+    font-size: 0.8rem;
+} 
 
 }
