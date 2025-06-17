@@ -1,0 +1,11 @@
+@mixin formElements ($fmDisp, $FmflexDir, $FmGap) {
+    display: $fmDisp;
+    flex-direction: $FmflexDir;
+    gap: $FmGap;
+}
+
+@mixin faqsTitulo ($fontSiz, $margBot, $colorFq) {
+    font-size: $fontSiz;
+   margin-bottom: $margBot;
+    color: $colorFq;
+}

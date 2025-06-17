@@ -17,15 +17,17 @@
 
 
 .mainContacto form{
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
+    @include formElements (flex, column, 1.4rem);
+    
 }
-.input{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+
+.input {
+    @include formElements (flex, column, 7px);
+
 }
+
+
+
 .input label{
     text-align: start;
     font-size: 0.8rem;
@@ -35,7 +37,7 @@
     height: 2.5rem;
     border-radius: 10px;
     border: solid rgb(146, 146, 146) 1px;
-    background-color: $AzulColor;
+    background-color: $fondoBlanco;
     padding: 5px 10px;
     outline: none;
     color: $fondoBlanco
@@ -55,8 +57,10 @@
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 25px;
-    border: solid $AzulColor;
+    border: none;
     margin-top: 20px;
     padding: 10px 0;
 
   }
+
+ 

@@ -1,7 +1,5 @@
 .sucursales {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %ComponentesCentrados;
   flex-wrap: wrap;
   gap: 1.5rem;
   max-width: 1400px;

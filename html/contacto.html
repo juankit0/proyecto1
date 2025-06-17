@@ -49,35 +49,35 @@
             </div>
         </nav>
     </header>
-    
-    <div class="containerContacto">
-        <h1 class="fs-1 text-center">Formulario</h1>
-        <section class="formulario">
-            <form onsubmit="event.preventDefault();">
-                <div class="input">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required>
-                </div>
-                <div class="input">
-                    <label for="correo">Email:</label>
-                    <input type="email" name="correo" id="correo" placeholder="Correo Electrónico" required>
-                </div>
-                <div class="input">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" name="telefono" id="telefono" placeholder="Ej: 11 2345 6789">
-                </div>
-                <div class="input">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" style="resize: none;" placeholder="Escribí tu mensaje acá"
-                        required></textarea>
-                </div>
-                <div class="button">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-        </section>
-    </div>
-
+    <main class="mainBackground">
+            <div class="containerContacto">
+                <h1 class="fs-1 text-center text-white">Formulario</h1>
+                <section class="formulario">
+                    <form onsubmit="event.preventDefault();">
+                        <div class="input">
+                            <label class="text-white fw-bold" for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required>
+                        </div>
+                        <div class="input">
+                            <label class="text-white fw-bold" for="correo">Email:</label>
+                            <input type="email" name="correo" id="correo" placeholder="Correo Electrónico" required>
+                        </div>
+                        <div class="input">
+                            <label class="text-white fw-bold" for="telefono">Teléfono:</label>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Ej: 11 2345 6789">
+                        </div>
+                        <div class="input">
+                            <label class="text-white fw-bold" for="mensaje">Mensaje:</label>
+                            <textarea name="mensaje" id="mensaje" style="resize: none;"
+                                placeholder="Escribí tu mensaje acá" required></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </section>
+            </div>
+    </main>
 
     <footer class="footerDiseño">
         <p>&copy; Todos los derechos reservados</p>
