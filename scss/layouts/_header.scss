@@ -1,0 +1,15 @@
+/* inicio header */
+
+.productosTitulo {
+  text-align: center;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navPrincipal{
+  display: flex;
+  gap: 1.2rem;
+}
